@@ -1,8 +1,14 @@
 class Frog {
 	String name;
 	int age;
+	String color;
 	
 	// The this keyword is like a reference to the object you are in
+	
+	public void setColor(String color) {
+		this.color = color;
+	}
+	
 	public void setName(String name) {
 	 this.name  = name;
 	}
@@ -17,6 +23,9 @@ class Frog {
 	public int getAge() {
 		return age;
 	}
+	public String getColor() {
+		return color;
+	}
 }
 
 public class Application {
@@ -30,10 +39,20 @@ public class Application {
 		
 		frog1.setName("Bertie");  // Calling a method
 		frog1.setAge(1);
+		frog1.setColor("Orange");
 		
-		System.out.println(frog1.getName());
-		System.out.println(frog1.getAge()+ " years old");
+		Frog frog2 = new Frog();
+		frog2.setName("Froggie");
+		frog2.setAge(2);
+		frog2.setColor("Magenta");
 		
+		System.out.println(frog1.getName() + " the frog is ");
+		System.out.println(frog1.getAge() + " years old" + " and it's color is ");
+		System.out.println(frog1.getColor());
+		
+		System.out.println(frog2.getName() + " the frog is ");
+		System.out.println(frog2.getAge() + " years old" + ", and it's color is ");
+		System.out.println(frog2.getColor());
 	}
 	
 }
