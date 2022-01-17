@@ -34,6 +34,16 @@ public class Application {
 			
 			System.out.println();
 		}
+		
+		String[][] words = new String [2][];
+		
+		System.out.println(words[0]);
+		
+		words[0] = new String[3];
+		
+		words[0][1] = "Hi there";
+		
+		System.out.println(words[0][1]);
 	}
 
 }
